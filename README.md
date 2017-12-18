@@ -31,8 +31,8 @@
 
 - Manually compile
 1. `git clone https://github.com/kurtulusahmet/Cetvel`
-2. `pod install`
-3. `cd Cetvel/`
+2. `cd Cetvel/`
+3. `pod install`
 4. Compile project with Xcode
 
 ## Contribute
