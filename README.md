@@ -19,11 +19,11 @@
 
 ## Preview
 
-1. Mesure Length
+1. Measure Length
 
 ![](length.png)
 
-2. Mesure Area
+2. Measure Area
 
 ![](area.png)
 
@@ -32,7 +32,8 @@
 - Manually compile
 1. `git clone https://github.com/kurtulusahmet/Cetvel`
 2. `pod install`
-3. Compile project with Xcode
+3. `cd Cetvel/`
+4. Compile project with Xcode
 
 ## Contribute
 
