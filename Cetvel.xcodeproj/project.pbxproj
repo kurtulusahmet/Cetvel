@@ -1,0 +1,900 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0941286643E84B1A38794A7C /* Pods_CetvelTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 066CDB15D29F33F489DC6B82 /* Pods_CetvelTests.framework */; };
+		377BDA3ADAABF774275E0242 /* Pods_CetvelUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F88CDA2F381229DC562CEA99 /* Pods_CetvelUITests.framework */; };
+		641F4DB81FE7A4930085D85E /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 641F4DB71FE7A4930085D85E /* Settings.storyboard */; };
+		641F4DBA1FE7A5C50085D85E /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641F4DB91FE7A5C50085D85E /* SettingsViewController.swift */; };
+		644EA5601FE5AD84006CF07A /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644EA55F1FE5AD84006CF07A /* UIView+Extension.swift */; };
+		644EA5621FE5ADD0006CF07A /* ARKit+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644EA5611FE5ADD0006CF07A /* ARKit+Extension.swift */; };
+		644EA5641FE5AEA5006CF07A /* SceneKit+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644EA5631FE5AEA5006CF07A /* SceneKit+Extension.swift */; };
+		644EA5661FE5AF05006CF07A /* CoreGraphics+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644EA5651FE5AF05006CF07A /* CoreGraphics+Extension.swift */; };
+		644EA5691FE5AF3D006CF07A /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644EA5681FE5AF3D006CF07A /* Utilities.swift */; };
+		644EA56B1FE5AF68006CF07A /* UIAlertController+Dismiss.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644EA56A1FE5AF68006CF07A /* UIAlertController+Dismiss.swift */; };
+		644EA5701FE5B027006CF07A /* PlaneDetector.mm in Sources */ = {isa = PBXBuildFile; fileRef = 644EA56F1FE5B027006CF07A /* PlaneDetector.mm */; };
+		644EA5721FE5B07B006CF07A /* MeasurementUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644EA5711FE5B07B006CF07A /* MeasurementUnit.swift */; };
+		644EA5741FE5B178006CF07A /* click.wav in Resources */ = {isa = PBXBuildFile; fileRef = 644EA5731FE5B178006CF07A /* click.wav */; };
+		644EA5771FE5B2B2006CF07A /* Plane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644EA5761FE5B2B2006CF07A /* Plane.swift */; };
+		644EA5791FE5B2D3006CF07A /* FocusSquare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644EA5781FE5B2D3006CF07A /* FocusSquare.swift */; };
+		644EA57B1FE5B324006CF07A /* CylinderLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644EA57A1FE5B324006CF07A /* CylinderLine.swift */; };
+		644EA57D1FE5B350006CF07A /* LineNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644EA57C1FE5B350006CF07A /* LineNode.swift */; };
+		644EA57F1FE5B36E006CF07A /* LineSetNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644EA57E1FE5B36E006CF07A /* LineSetNode.swift */; };
+		644EA5831FE5B69F006CF07A /* ARCetvelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644EA5821FE5B69F006CF07A /* ARCetvelViewController.swift */; };
+		644EA5881FE5C291006CF07A /* ApplicationSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644EA5871FE5C291006CF07A /* ApplicationSetting.swift */; };
+		64D5CEF61FE5317200FF0B5B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D5CEF51FE5317200FF0B5B /* AppDelegate.swift */; };
+		64D5CEFD1FE5317200FF0B5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64D5CEFC1FE5317200FF0B5B /* Assets.xcassets */; };
+		64D5CF001FE5317200FF0B5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64D5CEFE1FE5317200FF0B5B /* LaunchScreen.storyboard */; };
+		64D5CF0B1FE5317300FF0B5B /* CetvelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D5CF0A1FE5317300FF0B5B /* CetvelTests.swift */; };
+		64D5CF161FE5317300FF0B5B /* CetvelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D5CF151FE5317300FF0B5B /* CetvelUITests.swift */; };
+		64F495F01FE6E49200885BE0 /* MeasurementMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F495EF1FE6E49200885BE0 /* MeasurementMode.swift */; };
+		64F495F21FE6E4E700885BE0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F495F11FE6E4E700885BE0 /* Constants.swift */; };
+		64F495F41FE6E80700885BE0 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F495F31FE6E80700885BE0 /* CustomCell.swift */; };
+		64F495F61FE6E88B00885BE0 /* CustomDrawingActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F495F51FE6E88B00885BE0 /* CustomDrawingActionButton.swift */; };
+		64F495FA1FE70F0900885BE0 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F495F91FE70F0900885BE0 /* UIButton+Extension.swift */; };
+		8BB913DF3676B2D38B65A5FB /* Pods_Cetvel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4984E898BF1C26A4055B5224 /* Pods_Cetvel.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		64D5CF071FE5317300FF0B5B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64D5CEEA1FE5317200FF0B5B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 64D5CEF11FE5317200FF0B5B;
+			remoteInfo = Cetvel;
+		};
+		64D5CF121FE5317300FF0B5B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64D5CEEA1FE5317200FF0B5B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 64D5CEF11FE5317200FF0B5B;
+			remoteInfo = Cetvel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		066CDB15D29F33F489DC6B82 /* Pods_CetvelTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CetvelTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4984E898BF1C26A4055B5224 /* Pods_Cetvel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cetvel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		55801AE08D0F0FC1FBB550B3 /* Pods-CetvelUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CetvelUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CetvelUITests/Pods-CetvelUITests.release.xcconfig"; sourceTree = "<group>"; };
+		57D382DB264220598AF934F8 /* Pods-CetvelTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CetvelTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CetvelTests/Pods-CetvelTests.debug.xcconfig"; sourceTree = "<group>"; };
+		641F4DB71FE7A4930085D85E /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		641F4DB91FE7A5C50085D85E /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		644EA55F1FE5AD84006CF07A /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		644EA5611FE5ADD0006CF07A /* ARKit+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ARKit+Extension.swift"; sourceTree = "<group>"; };
+		644EA5631FE5AEA5006CF07A /* SceneKit+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SceneKit+Extension.swift"; sourceTree = "<group>"; };
+		644EA5651FE5AF05006CF07A /* CoreGraphics+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreGraphics+Extension.swift"; sourceTree = "<group>"; };
+		644EA5681FE5AF3D006CF07A /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		644EA56A1FE5AF68006CF07A /* UIAlertController+Dismiss.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Dismiss.swift"; sourceTree = "<group>"; };
+		644EA56D1FE5B027006CF07A /* Cetvel-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Cetvel-Bridging-Header.h"; sourceTree = "<group>"; };
+		644EA56E1FE5B027006CF07A /* PlaneDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaneDetector.h; sourceTree = "<group>"; };
+		644EA56F1FE5B027006CF07A /* PlaneDetector.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PlaneDetector.mm; sourceTree = "<group>"; };
+		644EA5711FE5B07B006CF07A /* MeasurementUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasurementUnit.swift; sourceTree = "<group>"; };
+		644EA5731FE5B178006CF07A /* click.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = click.wav; sourceTree = "<group>"; };
+		644EA5761FE5B2B2006CF07A /* Plane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plane.swift; sourceTree = "<group>"; };
+		644EA5781FE5B2D3006CF07A /* FocusSquare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusSquare.swift; sourceTree = "<group>"; };
+		644EA57A1FE5B324006CF07A /* CylinderLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CylinderLine.swift; sourceTree = "<group>"; };
+		644EA57C1FE5B350006CF07A /* LineNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineNode.swift; sourceTree = "<group>"; };
+		644EA57E1FE5B36E006CF07A /* LineSetNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineSetNode.swift; sourceTree = "<group>"; };
+		644EA5821FE5B69F006CF07A /* ARCetvelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARCetvelViewController.swift; sourceTree = "<group>"; };
+		644EA5871FE5C291006CF07A /* ApplicationSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationSetting.swift; sourceTree = "<group>"; };
+		64D5CEF21FE5317200FF0B5B /* Cetvel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cetvel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		64D5CEF51FE5317200FF0B5B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		64D5CEFC1FE5317200FF0B5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		64D5CEFF1FE5317200FF0B5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		64D5CF011FE5317200FF0B5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64D5CF061FE5317300FF0B5B /* CetvelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CetvelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		64D5CF0A1FE5317300FF0B5B /* CetvelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CetvelTests.swift; sourceTree = "<group>"; };
+		64D5CF0C1FE5317300FF0B5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64D5CF111FE5317300FF0B5B /* CetvelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CetvelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		64D5CF151FE5317300FF0B5B /* CetvelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CetvelUITests.swift; sourceTree = "<group>"; };
+		64D5CF171FE5317300FF0B5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64F495EF1FE6E49200885BE0 /* MeasurementMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasurementMode.swift; sourceTree = "<group>"; };
+		64F495F11FE6E4E700885BE0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		64F495F31FE6E80700885BE0 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		64F495F51FE6E88B00885BE0 /* CustomDrawingActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDrawingActionButton.swift; sourceTree = "<group>"; };
+		64F495F91FE70F0900885BE0 /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
+		9512BB791D26D0BC86AF82D3 /* Pods-CetvelTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CetvelTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CetvelTests/Pods-CetvelTests.release.xcconfig"; sourceTree = "<group>"; };
+		96FF3F9D478CA36F95D70ED7 /* Pods-CetvelUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CetvelUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CetvelUITests/Pods-CetvelUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AF0BDE87DDFDEFCAAB4BDCD4 /* Pods-Cetvel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cetvel.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cetvel/Pods-Cetvel.release.xcconfig"; sourceTree = "<group>"; };
+		B293768830FE9723F98AB698 /* Pods-Cetvel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cetvel.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cetvel/Pods-Cetvel.debug.xcconfig"; sourceTree = "<group>"; };
+		F88CDA2F381229DC562CEA99 /* Pods_CetvelUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CetvelUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		64D5CEEF1FE5317200FF0B5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BB913DF3676B2D38B65A5FB /* Pods_Cetvel.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64D5CF031FE5317300FF0B5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0941286643E84B1A38794A7C /* Pods_CetvelTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64D5CF0E1FE5317300FF0B5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				377BDA3ADAABF774275E0242 /* Pods_CetvelUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3E0180B0AD565EF9F73D28B0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4984E898BF1C26A4055B5224 /* Pods_Cetvel.framework */,
+				066CDB15D29F33F489DC6B82 /* Pods_CetvelTests.framework */,
+				F88CDA2F381229DC562CEA99 /* Pods_CetvelUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		644EA55E1FE5AD67006CF07A /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				644EA55F1FE5AD84006CF07A /* UIView+Extension.swift */,
+				644EA5611FE5ADD0006CF07A /* ARKit+Extension.swift */,
+				644EA5631FE5AEA5006CF07A /* SceneKit+Extension.swift */,
+				644EA5651FE5AF05006CF07A /* CoreGraphics+Extension.swift */,
+				64F495F91FE70F0900885BE0 /* UIButton+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		644EA5671FE5AF28006CF07A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				644EA5681FE5AF3D006CF07A /* Utilities.swift */,
+				644EA56A1FE5AF68006CF07A /* UIAlertController+Dismiss.swift */,
+				644EA5711FE5B07B006CF07A /* MeasurementUnit.swift */,
+				64F495EF1FE6E49200885BE0 /* MeasurementMode.swift */,
+				64F495F11FE6E4E700885BE0 /* Constants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		644EA56C1FE5B010006CF07A /* ObjClasses */ = {
+			isa = PBXGroup;
+			children = (
+				644EA56D1FE5B027006CF07A /* Cetvel-Bridging-Header.h */,
+				644EA56E1FE5B027006CF07A /* PlaneDetector.h */,
+				644EA56F1FE5B027006CF07A /* PlaneDetector.mm */,
+			);
+			path = ObjClasses;
+			sourceTree = "<group>";
+		};
+		644EA5751FE5B29B006CF07A /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				644EA5761FE5B2B2006CF07A /* Plane.swift */,
+				644EA5781FE5B2D3006CF07A /* FocusSquare.swift */,
+				644EA57A1FE5B324006CF07A /* CylinderLine.swift */,
+				644EA57C1FE5B350006CF07A /* LineNode.swift */,
+				644EA57E1FE5B36E006CF07A /* LineSetNode.swift */,
+				64F495F31FE6E80700885BE0 /* CustomCell.swift */,
+				64F495F51FE6E88B00885BE0 /* CustomDrawingActionButton.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		644EA5841FE5C25F006CF07A /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				644EA5871FE5C291006CF07A /* ApplicationSetting.swift */,
+				641F4DB71FE7A4930085D85E /* Settings.storyboard */,
+				641F4DB91FE7A5C50085D85E /* SettingsViewController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		64D5CEE91FE5317200FF0B5B = {
+			isa = PBXGroup;
+			children = (
+				64D5CEF41FE5317200FF0B5B /* Cetvel */,
+				64D5CF091FE5317300FF0B5B /* CetvelTests */,
+				64D5CF141FE5317300FF0B5B /* CetvelUITests */,
+				64D5CEF31FE5317200FF0B5B /* Products */,
+				7E72EAC36600D0E13D68842F /* Pods */,
+				3E0180B0AD565EF9F73D28B0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		64D5CEF31FE5317200FF0B5B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				64D5CEF21FE5317200FF0B5B /* Cetvel.app */,
+				64D5CF061FE5317300FF0B5B /* CetvelTests.xctest */,
+				64D5CF111FE5317300FF0B5B /* CetvelUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		64D5CEF41FE5317200FF0B5B /* Cetvel */ = {
+			isa = PBXGroup;
+			children = (
+				644EA5841FE5C25F006CF07A /* Settings */,
+				644EA5751FE5B29B006CF07A /* CustomViews */,
+				644EA56C1FE5B010006CF07A /* ObjClasses */,
+				644EA5671FE5AF28006CF07A /* Utils */,
+				644EA55E1FE5AD67006CF07A /* Extension */,
+				64D5CEF51FE5317200FF0B5B /* AppDelegate.swift */,
+				644EA5821FE5B69F006CF07A /* ARCetvelViewController.swift */,
+				64D5CEFC1FE5317200FF0B5B /* Assets.xcassets */,
+				644EA5731FE5B178006CF07A /* click.wav */,
+				64D5CEFE1FE5317200FF0B5B /* LaunchScreen.storyboard */,
+				64D5CF011FE5317200FF0B5B /* Info.plist */,
+			);
+			path = Cetvel;
+			sourceTree = "<group>";
+		};
+		64D5CF091FE5317300FF0B5B /* CetvelTests */ = {
+			isa = PBXGroup;
+			children = (
+				64D5CF0A1FE5317300FF0B5B /* CetvelTests.swift */,
+				64D5CF0C1FE5317300FF0B5B /* Info.plist */,
+			);
+			path = CetvelTests;
+			sourceTree = "<group>";
+		};
+		64D5CF141FE5317300FF0B5B /* CetvelUITests */ = {
+			isa = PBXGroup;
+			children = (
+				64D5CF151FE5317300FF0B5B /* CetvelUITests.swift */,
+				64D5CF171FE5317300FF0B5B /* Info.plist */,
+			);
+			path = CetvelUITests;
+			sourceTree = "<group>";
+		};
+		7E72EAC36600D0E13D68842F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B293768830FE9723F98AB698 /* Pods-Cetvel.debug.xcconfig */,
+				AF0BDE87DDFDEFCAAB4BDCD4 /* Pods-Cetvel.release.xcconfig */,
+				57D382DB264220598AF934F8 /* Pods-CetvelTests.debug.xcconfig */,
+				9512BB791D26D0BC86AF82D3 /* Pods-CetvelTests.release.xcconfig */,
+				96FF3F9D478CA36F95D70ED7 /* Pods-CetvelUITests.debug.xcconfig */,
+				55801AE08D0F0FC1FBB550B3 /* Pods-CetvelUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		64D5CEF11FE5317200FF0B5B /* Cetvel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64D5CF1A1FE5317300FF0B5B /* Build configuration list for PBXNativeTarget "Cetvel" */;
+			buildPhases = (
+				8DBAE628878BEF90007EF16C /* [CP] Check Pods Manifest.lock */,
+				64D5CEEE1FE5317200FF0B5B /* Sources */,
+				64D5CEEF1FE5317200FF0B5B /* Frameworks */,
+				64D5CEF01FE5317200FF0B5B /* Resources */,
+				40B29D18030FDC35D908840F /* [CP] Embed Pods Frameworks */,
+				ED8893F73AE2B934BD08D17D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Cetvel;
+			productName = Cetvel;
+			productReference = 64D5CEF21FE5317200FF0B5B /* Cetvel.app */;
+			productType = "com.apple.product-type.application";
+		};
+		64D5CF051FE5317300FF0B5B /* CetvelTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64D5CF1D1FE5317300FF0B5B /* Build configuration list for PBXNativeTarget "CetvelTests" */;
+			buildPhases = (
+				E517859923FAACDFB5E52F7D /* [CP] Check Pods Manifest.lock */,
+				64D5CF021FE5317300FF0B5B /* Sources */,
+				64D5CF031FE5317300FF0B5B /* Frameworks */,
+				64D5CF041FE5317300FF0B5B /* Resources */,
+				476ECE4D1C8008F6612CC28A /* [CP] Embed Pods Frameworks */,
+				FCF184E19EB9579F29D7680C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				64D5CF081FE5317300FF0B5B /* PBXTargetDependency */,
+			);
+			name = CetvelTests;
+			productName = CetvelTests;
+			productReference = 64D5CF061FE5317300FF0B5B /* CetvelTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		64D5CF101FE5317300FF0B5B /* CetvelUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64D5CF201FE5317300FF0B5B /* Build configuration list for PBXNativeTarget "CetvelUITests" */;
+			buildPhases = (
+				3ADF3ED5F1659535DA6E4409 /* [CP] Check Pods Manifest.lock */,
+				64D5CF0D1FE5317300FF0B5B /* Sources */,
+				64D5CF0E1FE5317300FF0B5B /* Frameworks */,
+				64D5CF0F1FE5317300FF0B5B /* Resources */,
+				EA46516D3DE2A85FF9FC38A2 /* [CP] Embed Pods Frameworks */,
+				976A365CDB5849CB704E3DB1 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				64D5CF131FE5317300FF0B5B /* PBXTargetDependency */,
+			);
+			name = CetvelUITests;
+			productName = CetvelUITests;
+			productReference = 64D5CF111FE5317300FF0B5B /* CetvelUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		64D5CEEA1FE5317200FF0B5B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Kurtulus Ahmet";
+				TargetAttributes = {
+					64D5CEF11FE5317200FF0B5B = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+					};
+					64D5CF051FE5317300FF0B5B = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 64D5CEF11FE5317200FF0B5B;
+					};
+					64D5CF101FE5317300FF0B5B = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 64D5CEF11FE5317200FF0B5B;
+					};
+				};
+			};
+			buildConfigurationList = 64D5CEED1FE5317200FF0B5B /* Build configuration list for PBXProject "Cetvel" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 64D5CEE91FE5317200FF0B5B;
+			productRefGroup = 64D5CEF31FE5317200FF0B5B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				64D5CEF11FE5317200FF0B5B /* Cetvel */,
+				64D5CF051FE5317300FF0B5B /* CetvelTests */,
+				64D5CF101FE5317300FF0B5B /* CetvelUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		64D5CEF01FE5317200FF0B5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64D5CF001FE5317200FF0B5B /* LaunchScreen.storyboard in Resources */,
+				64D5CEFD1FE5317200FF0B5B /* Assets.xcassets in Resources */,
+				644EA5741FE5B178006CF07A /* click.wav in Resources */,
+				641F4DB81FE7A4930085D85E /* Settings.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64D5CF041FE5317300FF0B5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64D5CF0F1FE5317300FF0B5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3ADF3ED5F1659535DA6E4409 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CetvelUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		40B29D18030FDC35D908840F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Cetvel/Pods-Cetvel-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/LiquidFloatingActionButton/LiquidFloatingActionButton.framework",
+				"${BUILT_PRODUCTS_DIR}/OpenCV/opencv2.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LiquidFloatingActionButton.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/opencv2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Cetvel/Pods-Cetvel-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		476ECE4D1C8008F6612CC28A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CetvelTests/Pods-CetvelTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8DBAE628878BEF90007EF16C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Cetvel-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		976A365CDB5849CB704E3DB1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CetvelUITests/Pods-CetvelUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E517859923FAACDFB5E52F7D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CetvelTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA46516D3DE2A85FF9FC38A2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CetvelUITests/Pods-CetvelUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED8893F73AE2B934BD08D17D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Cetvel/Pods-Cetvel-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FCF184E19EB9579F29D7680C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CetvelTests/Pods-CetvelTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		64D5CEEE1FE5317200FF0B5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64F495F61FE6E88B00885BE0 /* CustomDrawingActionButton.swift in Sources */,
+				644EA5831FE5B69F006CF07A /* ARCetvelViewController.swift in Sources */,
+				64F495F21FE6E4E700885BE0 /* Constants.swift in Sources */,
+				64F495FA1FE70F0900885BE0 /* UIButton+Extension.swift in Sources */,
+				64F495F41FE6E80700885BE0 /* CustomCell.swift in Sources */,
+				644EA5641FE5AEA5006CF07A /* SceneKit+Extension.swift in Sources */,
+				644EA5791FE5B2D3006CF07A /* FocusSquare.swift in Sources */,
+				644EA5601FE5AD84006CF07A /* UIView+Extension.swift in Sources */,
+				644EA57B1FE5B324006CF07A /* CylinderLine.swift in Sources */,
+				644EA5691FE5AF3D006CF07A /* Utilities.swift in Sources */,
+				644EA57F1FE5B36E006CF07A /* LineSetNode.swift in Sources */,
+				644EA56B1FE5AF68006CF07A /* UIAlertController+Dismiss.swift in Sources */,
+				64F495F01FE6E49200885BE0 /* MeasurementMode.swift in Sources */,
+				641F4DBA1FE7A5C50085D85E /* SettingsViewController.swift in Sources */,
+				644EA57D1FE5B350006CF07A /* LineNode.swift in Sources */,
+				644EA5701FE5B027006CF07A /* PlaneDetector.mm in Sources */,
+				644EA5721FE5B07B006CF07A /* MeasurementUnit.swift in Sources */,
+				644EA5661FE5AF05006CF07A /* CoreGraphics+Extension.swift in Sources */,
+				64D5CEF61FE5317200FF0B5B /* AppDelegate.swift in Sources */,
+				644EA5621FE5ADD0006CF07A /* ARKit+Extension.swift in Sources */,
+				644EA5771FE5B2B2006CF07A /* Plane.swift in Sources */,
+				644EA5881FE5C291006CF07A /* ApplicationSetting.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64D5CF021FE5317300FF0B5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64D5CF0B1FE5317300FF0B5B /* CetvelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64D5CF0D1FE5317300FF0B5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64D5CF161FE5317300FF0B5B /* CetvelUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		64D5CF081FE5317300FF0B5B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 64D5CEF11FE5317200FF0B5B /* Cetvel */;
+			targetProxy = 64D5CF071FE5317300FF0B5B /* PBXContainerItemProxy */;
+		};
+		64D5CF131FE5317300FF0B5B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 64D5CEF11FE5317200FF0B5B /* Cetvel */;
+			targetProxy = 64D5CF121FE5317300FF0B5B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		64D5CEFE1FE5317200FF0B5B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				64D5CEFF1FE5317200FF0B5B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		64D5CF181FE5317300FF0B5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		64D5CF191FE5317300FF0B5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		64D5CF1B1FE5317300FF0B5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B293768830FE9723F98AB698 /* Pods-Cetvel.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3SPH4LHVX6;
+				INFOPLIST_FILE = Cetvel/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kurtulusdev.Cetvel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Cetvel/ObjClasses/Cetvel-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		64D5CF1C1FE5317300FF0B5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF0BDE87DDFDEFCAAB4BDCD4 /* Pods-Cetvel.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3SPH4LHVX6;
+				INFOPLIST_FILE = Cetvel/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kurtulusdev.Cetvel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Cetvel/ObjClasses/Cetvel-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		64D5CF1E1FE5317300FF0B5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57D382DB264220598AF934F8 /* Pods-CetvelTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3SPH4LHVX6;
+				INFOPLIST_FILE = CetvelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kurtulusdev.CetvelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cetvel.app/Cetvel";
+			};
+			name = Debug;
+		};
+		64D5CF1F1FE5317300FF0B5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9512BB791D26D0BC86AF82D3 /* Pods-CetvelTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3SPH4LHVX6;
+				INFOPLIST_FILE = CetvelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kurtulusdev.CetvelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cetvel.app/Cetvel";
+			};
+			name = Release;
+		};
+		64D5CF211FE5317300FF0B5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96FF3F9D478CA36F95D70ED7 /* Pods-CetvelUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3SPH4LHVX6;
+				INFOPLIST_FILE = CetvelUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kurtulusdev.CetvelUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Cetvel;
+			};
+			name = Debug;
+		};
+		64D5CF221FE5317300FF0B5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55801AE08D0F0FC1FBB550B3 /* Pods-CetvelUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3SPH4LHVX6;
+				INFOPLIST_FILE = CetvelUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kurtulusdev.CetvelUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Cetvel;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		64D5CEED1FE5317200FF0B5B /* Build configuration list for PBXProject "Cetvel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64D5CF181FE5317300FF0B5B /* Debug */,
+				64D5CF191FE5317300FF0B5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64D5CF1A1FE5317300FF0B5B /* Build configuration list for PBXNativeTarget "Cetvel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64D5CF1B1FE5317300FF0B5B /* Debug */,
+				64D5CF1C1FE5317300FF0B5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64D5CF1D1FE5317300FF0B5B /* Build configuration list for PBXNativeTarget "CetvelTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64D5CF1E1FE5317300FF0B5B /* Debug */,
+				64D5CF1F1FE5317300FF0B5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64D5CF201FE5317300FF0B5B /* Build configuration list for PBXNativeTarget "CetvelUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64D5CF211FE5317300FF0B5B /* Debug */,
+				64D5CF221FE5317300FF0B5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 64D5CEEA1FE5317200FF0B5B /* Project object */;
+}
