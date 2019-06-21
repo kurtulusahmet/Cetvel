@@ -51,6 +51,8 @@ class ARCetvelViewController: UIViewController, LiquidFloatingActionButtonDataSo
                     HUD.show(title: "Bilgi yetersiz", message: "Özellik noktası yeterli değildir, lütfen daha fazla özellik noktası elde etmek için cihazı sallayın", inSource: self, autoDismissDuration: 5)
                 case .excessiveMotion:
                     HUD.show(title: "Aşırı Hareket", message: "Cihaz çok hızlı hareket ediyor", inSource: self, autoDismissDuration: 5)
+                case .relocalizing:
+                    HUD.show(title: "Oturum Kesintisi", message: "Oturum kesintiye uğradı. Doğru sonuçlar için uygulamayı yeniden başlatın", inSource: self, autoDismissDuration: 5)
                 }
             case .normal:
                 HUD.dismiss()

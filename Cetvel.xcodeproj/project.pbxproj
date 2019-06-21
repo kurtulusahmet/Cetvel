@@ -284,7 +284,6 @@
 				64D5CEEF1FE5317200FF0B5B /* Frameworks */,
 				64D5CEF01FE5317200FF0B5B /* Resources */,
 				40B29D18030FDC35D908840F /* [CP] Embed Pods Frameworks */,
-				ED8893F73AE2B934BD08D17D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -303,8 +302,6 @@
 				64D5CF021FE5317300FF0B5B /* Sources */,
 				64D5CF031FE5317300FF0B5B /* Frameworks */,
 				64D5CF041FE5317300FF0B5B /* Resources */,
-				476ECE4D1C8008F6612CC28A /* [CP] Embed Pods Frameworks */,
-				FCF184E19EB9579F29D7680C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -324,8 +321,6 @@
 				64D5CF0D1FE5317300FF0B5B /* Sources */,
 				64D5CF0E1FE5317300FF0B5B /* Frameworks */,
 				64D5CF0F1FE5317300FF0B5B /* Resources */,
-				EA46516D3DE2A85FF9FC38A2 /* [CP] Embed Pods Frameworks */,
-				976A365CDB5849CB704E3DB1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -453,21 +448,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Cetvel/Pods-Cetvel-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		476ECE4D1C8008F6612CC28A /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CetvelTests/Pods-CetvelTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		8DBAE628878BEF90007EF16C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -486,21 +466,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		976A365CDB5849CB704E3DB1 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CetvelUITests/Pods-CetvelUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		E517859923FAACDFB5E52F7D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -517,51 +482,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EA46516D3DE2A85FF9FC38A2 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CetvelUITests/Pods-CetvelUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		ED8893F73AE2B934BD08D17D /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Cetvel/Pods-Cetvel-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FCF184E19EB9579F29D7680C /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CetvelTests/Pods-CetvelTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -753,7 +673,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3SPH4LHVX6;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Cetvel/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -773,7 +693,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3SPH4LHVX6;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Cetvel/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

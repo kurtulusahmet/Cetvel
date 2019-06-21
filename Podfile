@@ -7,7 +7,7 @@ target 'Cetvel' do
 
   # Pods for Cetvel
   pod 'OpenCV', '~> 3.2'
-  pod 'LiquidFloatingActionButton'
+  pod 'LiquidFloatingActionButton', :git => 'https://github.com/alexsanderkhitev/LiquidFloatingActionButton.git'
   pod 'SnapKit', '~> 4.0.0'
 
   target 'CetvelTests' do

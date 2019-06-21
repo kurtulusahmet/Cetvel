@@ -1,18 +1,32 @@
 PODS:
-  - LiquidFloatingActionButton (1.2.0)
+  - LiquidFloatingActionButton (2.0.0)
   - OpenCV (3.3.1)
   - SnapKit (4.0.0)
 
 DEPENDENCIES:
-  - LiquidFloatingActionButton
+  - LiquidFloatingActionButton (from `https://github.com/alexsanderkhitev/LiquidFloatingActionButton.git`)
   - OpenCV (~> 3.2)
   - SnapKit (~> 4.0.0)
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - OpenCV
+    - SnapKit
+
+EXTERNAL SOURCES:
+  LiquidFloatingActionButton:
+    :git: https://github.com/alexsanderkhitev/LiquidFloatingActionButton.git
+
+CHECKOUT OPTIONS:
+  LiquidFloatingActionButton:
+    :commit: 7acc6dee04da3ee00ff881309bd64763b216f0e6
+    :git: https://github.com/alexsanderkhitev/LiquidFloatingActionButton.git
+
 SPEC CHECKSUMS:
-  LiquidFloatingActionButton: 9c28961915754e08cf596ea6bdd60f9cd949f172
+  LiquidFloatingActionButton: 61496c787627103ccb3a23d4dea71faef4a84d4d
   OpenCV: d81447860f038d60723084aa02ecc963f95c55fa
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
 
-PODFILE CHECKSUM: 0ff99a7e6f1794570be912a6ee3852c684219757
+PODFILE CHECKSUM: 5ffcb27602356f71b6d5b37b1ddc8984d10cbcb7
 
-COCOAPODS: 1.3.1
+COCOAPODS: 1.5.3
